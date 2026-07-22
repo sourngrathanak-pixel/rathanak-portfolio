@@ -1,0 +1,159 @@
+<!doctype html>
+<head lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: gray;
+    }
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
+    h2 {
+      font-size: 32px;
+      color: #101828;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #667085;
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column; 
+      margin-bottom: 16px;
+    }
+
+    .input-group label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #344054;
+      margin-bottom: 6px;
+    }
+
+    .input-group input {
+      padding: 10px 14px;
+      font-size: 15px;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      outline: none;
+    }
+    .input-group input:focus {
+      border-color: #101828;
+    }
+    .forgot-password {
+      margin-bottom: 20px;
+    }
+
+    .forgot-password a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #101828;
+      text-decoration: none;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      background-color: #101828;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 12px;
+    }
+    .btn-google {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 12px;
+      background-color: white;
+      color: #344054;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 24px;
+    }
+
+    .btn-google img {
+      width: 20px;
+      height: 20px;
+    }
+    .signup-text {
+      text-align: center;
+      font-size: 14px;
+      color: #667085;
+    }
+
+    .signup-text a {
+      color: #101828;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+        <h2>Welcome back</h2>
+        <p class="subtitle">Welcome back! Please enter your details.</p>
+        <form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="forgot-password">
+                <a href="#">Forgot password</a>
+            </div>
+
+            <!-- ប៊ូតុង Login -->
+            <button type="submit" class="btn-login">Login</button>
+
+            <!-- ប៊ូតុង Google ប្រើ Flexbox ដើម្បីដាក់ Logo និង អក្សរ នៅកណ្តាលទន្ទឹមគ្នា -->
+            <button type="button" class="btn-google">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo">
+                Sign in with Google
+            </button>
+        </form>
+
+        <p class="signup-text">Don't have an account? <a href="#">Sign up for free</a></p>
+
+    </div>
+
+  </body>
+</html>
+  
+</html>

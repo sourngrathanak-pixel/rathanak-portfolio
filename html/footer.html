@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          "Inter",
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+      body {
+        background-color: #585a5a;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .footer-container {
+        background-color: #0b132b;
+        color: #ffffff;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 24px;
+        padding: 50px 40px 30px 40px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+      .footer-brand{
+        flex: 1;
+        min-width: 280px;
+      }
+      .brand-logo{
+        display: flex;
+        gap: 12px;
+        margin-bottom: 20px;
+        align-items: center;
+      }
+      .logo-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #00b4d8;
+        border-radius: 8px;
+      }
+      .brand-name h3{
+        color: #00b4d8;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .brand-name span{
+        font-style: 12px;
+        display: block;
+        color: #94a3b8;
+      }
+      .brand-bio{
+        color: #94a3b8;
+        font-size: 14px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+      }
+      .social{
+        display: flex;
+        gap: 12PX;
+      }
+      .social a{
+        color: #ffffff;
+        border: 1px solid #334155;
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .menu h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .menu a {
+        color: #94a3b8;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.2s ease;
+      }
+      .footer-divider{
+        border: none;
+        border-top: 1px solid #3b4e6e;
+        margin-bottom: 25px;
+      }
+      .footer-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: #94a3b8;
+        font-size: 13px;
+      }
+      .bottom-link{
+        display: flex;
+        gap: 20px;
+      }
+      .bottom-link a{
+        color: #94a3b8;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      .button-container {
+        display: flex;
+        gap: 12px;
+      }
+
+      .button {
+        background-color: #ffffff;
+        color: #0b132b;
+        padding: 6px 14px;
+        border-radius: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .button i {
+        font-size: 14px;
+        color: #00b4d8;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-box">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div class="brand-name">
+              <h3>AI Platform</h3>
+              <span>Intelligent Solutions</span>
+            </div>
+          </div>
+          <p class="brand-bio">
+            Empowering businesses worldwide with cutting-edge AI technology, Transfoem your operations, unlock insignts, and drive growth with our intelligents platform.
+          </p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="menu">
+          <h4>Products</h4>
+          <a href="#">AI Analytics</a>
+          <a href="#">Workflow Automation</a>
+          <a href="#">Chat AI</a>
+          <a href="#">Predictive Models</a>
+          <a href="#">API Platform</a>
+        </div>
+        <div class="menu">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Partners</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="menu">
+          <h4>Resources</h4>
+          <a href="#">Documentation</a>
+          <a href="#">Blog</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Support Center</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <div class="copyright">&copy; 2026 AI Platform. All rights reserved.</div>
+        <div class="bottom-link">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Term of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Security</a>
+        </div>
+        <div class="button-container">
+          <div class="button"><i class="fa-solid fa-shield-halved"></i> GDPR</div>
+          <div class="button"><i class="fa-solid fa-lock"></i> ISO 27001</div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

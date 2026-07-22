@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .card {
+        width: 300px;
+        background-color: rgb(103, 222, 222);
+        margin: 20px;
+        border-radius: 20px;
+        position: relative;
+      }
+      .top {
+        width: 300px;
+        height: 140px;
+        background-color: #0f8dc3;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .profile {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        position: absolute;
+        top: 100px;
+        left: 24px;
+        border: 4px solid white;
+      }
+      button {
+        position: absolute;
+        top: 120px;
+        right: 20px;
+        color: white;
+        background-color: #1d2b3a;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 8px;
+      }
+      .bottom {
+        text-align: left;
+        padding: 20px;
+        padding-top: 45px;
+        padding-bottom: 20px;
+      }
+      .name {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 2px;
+        color: #000;
+      }
+      .username {
+        color: gray;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      .bio {
+        font-size: 13px;
+        margin: 15px 0;
+        color: #000;
+      }
+      .stats {
+        font-size: 13px;
+        margin-bottom: 12px;
+        color: gray;
+      }
+      .stats strong {
+        color: #000;
+        margin-right: 5px;
+      }
+      .link {
+        font-size: 13px;
+        color: gray;
+        text-decoration: none;
+        align-items: center;
+        gap: 8px;
+      }
+      .link img {
+        width: 13px;
+        height: 13px;
+        object-fit: contain;
+        margin-top: 5px;
+        margin-right: 5px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        class="profile"
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+        alt=""
+      />
+      <div class="top"></div>
+      <div class="profile"></div>
+      <button>Follow</button>
+      <div class="bottom">
+        <h2 class="name">Sourng Rathanak</h2>
+        <div class="username">@sourngrathanak</div>
+        <p class="bio">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="stats">
+          <span><strong>000</strong>Following</span> &nbsp;&nbsp;
+          <span><strong>000.0k</strong>Followers</span>
+        </div>
+        <a href="#" class="link"
+          ><img
+            src="https://img.icons8.com/?size=100&id=YZXe199Na6nS&format=png&color=000000"
+            alt=""
+          />example.com</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
